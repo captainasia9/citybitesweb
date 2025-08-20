@@ -1,0 +1,52 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(240, 22%, 15%); /* Dark background */
+  padding: 10px 20px;
+  height: 80px;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* Logo */
+.navbar-logo {
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Right Side */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Search Bar */
+.search-bar {
+  padding: 6px 10px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  width: 200px;
+  transition: 0.3s;
+}
+
+.search-bar:focus {
+  width: 250px;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Bell Icon */
+.bell-icon {
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.bell-icon:hover {
+  color: #ffcc00;
+}
