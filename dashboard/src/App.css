@@ -1,45 +1,27 @@
-.navbar {
+.app {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #1e1e2f;
-  padding: 12px 20px;
-  color: white;
-  font-family: Arial, sans-serif;
+  flex-direction: column;
+  height: 100vh;
+  background-color: white;
 }
 
-/* Logo */
-.logo {
-  font-size: 20px;
-  font-weight: bold;
-  color: #fff;
-}
-
-/* Right side */
-.nav-right {
+/* Navbar always at top */
+.main-layout {
   display: flex;
-  align-items: center;
-  gap: 15px;
+  flex: 1;
 }
 
-/* Search bar */
-.search-bar {
-  padding: 6px 12px;
-  border-radius: 20px;
-  border: none;
-  outline: none;
-  font-size: 14px;
-  width: 200px;
+/* Sidebar stays left */
+.sidebar {
+  width: 250px;
+  background:white;
+  border-right: 1px solid #d0caca;
+  height: 100%;
+  padding: 20px;
 }
 
-/* Bell icon */
-.bell-icon {
-  font-size: 22px;
-  cursor: pointer;
-  color: white;
-  transition: 0.3s;
-}
-
-.bell-icon:hover {
-  color: #f39c12;
+.content {
+  flex: 1;
+  background:white;
+  padding: 20px;
 }

@@ -2,51 +2,76 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: hsl(240, 22%, 15%); /* Dark background */
-  padding: 10px 20px;
-  height: 80px;
-  color: white;
-  font-family: Arial, sans-serif;
+  padding: 6px 16px;
+  border-bottom: 1px solid #eee;
+  background: #fff;
+  font-family: "Inter", sans-serif;
+  height: 65px;
 }
 
-/* Logo */
-.navbar-logo {
-  font-size: 22px;
-  font-weight: bold;
-  cursor: pointer;
+/* Left side */
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  margin-right: 30px;
 }
 
-/* Right Side */
+.logo-icon {
+  font-size: 13px;
+}
+
+.brand {
+  font-size: 18px;
+  font-style: bold;
+  font-weight: 600;
+  color: #000;
+}
+
+/* Right side */
 .navbar-right {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 12px;
 }
 
-/* Search Bar */
-.search-bar {
-  padding: 6px 10px;
-  border-radius: 20px;
+.search-box {
+  display: flex;
+  align-items: center;
+  background: #f7f3f1;   /* soft beige */
+  padding: 4px 10px;
+  border-radius: 9999px; /* fully rounded */
+  width: 140px;
+  height: 28px;
+}
+
+.search-icon {
+  font-size: 12px;
+  color: #7b5e57;
+}
+
+.search-box input {
   border: none;
   outline: none;
-  font-size: 14px;
-  width: 200px;
-  transition: 0.3s;
+  background: transparent;
+  margin-left: 6px;
+  font-size: 12px;
+  color: #7b5e57;
+  width: 100%;
 }
 
-.search-bar:focus {
-  width: 250px;
-  background-color: #f9f9f9;
-  color: #333;
-}
-
-/* Bell Icon */
-.bell-icon {
-  font-size: 20px;
+.bell-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f7f3f1;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
   cursor: pointer;
-  transition: 0.2s;
 }
 
-.bell-icon:hover {
-  color: #ffcc00;
+.bell-icon {
+  font-size: 13px;
+  color: #333;
 }
